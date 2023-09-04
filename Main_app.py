@@ -277,7 +277,7 @@ st.session_state['df'],st.session_state['File_uploader_object'] = read_file(file
 
 st.sidebar.write("[Sample file download link](https://github.com/robin991/Quality_Check_Solution/blob/main/data/tips.csv)")
 
-st.sidebar.write("🧑‍💻🧑‍🤝‍🧑Solution presented by : Nikhil's team (Utkarsh, Amit, Hemlata, Robin)")
+st.sidebar.write("🧑‍💻🧑‍🤝‍🧑Solution presented by : Nikhil's team (Utkarsh, Amit, Hemlata,Akdash, Anushka, Robin)")
 
 if not st.session_state['df'].empty:
 
