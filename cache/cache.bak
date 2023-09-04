@@ -1,0 +1,3 @@
+'User: what is the count of rows for day = Saturday and time = Dinner\n5301f7585b0fc39f5c043dc998375cd3b490398dd9d6ca21fb5c431058519fdf', (2560, 1070)
+'User: what is the sum of rows for day = Saturday and time = Dinner\n5301f7585b0fc39f5c043dc998375cd3b490398dd9d6ca21fb5c431058519fdf', (4096, 1064)
+'User: what is the sum of tips for day = Saturday and time = Dinner\n5301f7585b0fc39f5c043dc998375cd3b490398dd9d6ca21fb5c431058519fdf', (5632, 1100)

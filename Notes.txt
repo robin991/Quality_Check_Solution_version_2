@@ -1,0 +1,2 @@
+How conversational retrieval chain works:
+https://python.langchain.com/docs/use_cases/question_answering/how_to/chat_vector_db
