@@ -232,7 +232,7 @@ def chat_bot_Pandasai_api() -> None:
         openai_api_key = os.getenv("OPENAI_API_KEY")
 
     else:
-        openai_api_key = st.secrets["OPENAI_API_KEY"]
+        openai_api_key = st.secrets["API_KEY"]
 
     st.title("Chat with CSV (Pandasai Openai)")
         
