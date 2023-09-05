@@ -3,6 +3,8 @@ import pandas as pd
 #from langchain.prompts import PromptTemplate
 #from langchain.llms import CTransformers 
 #import pandas as pd 
+
+#for llama
 from streamlit_chat import message
 import tempfile
 from langchain.document_loaders.csv_loader import CSVLoader
@@ -259,6 +261,8 @@ def chat_bot_Pandasai_api() -> None:
 
     return None
 ##---------Begin--------------##
+
+
 # set initial configuration
 st.set_page_config(
     page_title = "DAX solution",
@@ -269,7 +273,7 @@ initialize_session_state()
 
 
 ##-------Homepage------##
-st.title("AMEX CoPilot Solution")
+st.title("RIO CoPilot Solution (POC)")
 
 #Read file from side bar and  File uploader object
 st.session_state['df'],st.session_state['File_uploader_object'] = read_file(file_name = "File1")
