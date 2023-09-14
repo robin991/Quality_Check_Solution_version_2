@@ -263,3 +263,41 @@ result = analyze_data(dfs)
         ```
 2023-09-03 16:21:54 [INFO] Answer: {'type': 'number', 'value': 260.4}
 2023-09-03 16:21:54 [INFO] Executed in: 13.454655885696411s
+2023-09-14 14:47:25 [INFO] Question: what is the score of Finland
+2023-09-14 14:47:25 [INFO] Running PandasAI with openai LLM...
+2023-09-14 14:47:25 [INFO] Prompt ID: a96feee1-22bf-4c56-b31a-e798175c3b2e
+2023-09-14 14:47:35 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Code goes here (do not add comments)
+    score = dfs[0][dfs[0]['Country or region'] == 'Finland']['Score'].values[0]
+    return {"type": "number", "value": score}
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-09-14 14:47:35 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    score = dfs[0][dfs[0]['Country or region'] == 'Finland']['Score'].values[0]
+    return {'type': 'number', 'value': score}
+
+
+result = analyze_data(dfs)
+        ```
+2023-09-14 14:47:35 [INFO] Answer: {'type': 'number', 'value': 7.769}
+2023-09-14 14:47:35 [INFO] Executed in: 10.141778707504272s
