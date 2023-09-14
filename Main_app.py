@@ -1,8 +1,22 @@
 import streamlit as st
 import base64
+import pandas as pd 
+import io
+
+# for pandas ai
+from pandasai.llm.openai import OpenAI
+from dotenv import load_dotenv
+import os
+import pandas as pd
+from pandasai import PandasAI
 
 
 
+
+def page_configuration() -> None:
+    st.set_page_config(
+    page_title = "RIO-CoPilot",
+    layout="wide")
 
 def add_bg_from_local(image_file,main_bg_ext):
     with open(image_file, "rb") as image_file:
@@ -24,25 +38,6 @@ def add_bg_from_local(image_file,main_bg_ext):
     """,
     unsafe_allow_html=True
     )
- 
-
-import pandas as pd 
-import io
-
-# for pandas ai
-from pandasai.llm.openai import OpenAI
-from dotenv import load_dotenv
-import os
-import pandas as pd
-from pandasai import PandasAI
-
-
-
-
-def page_configuration() -> None:
-    st.set_page_config(
-    page_title = "RIO-CoPilot",
-    layout="wide")
 
 def initialize_session_state() -> None:
     if "df" not in st.session_state : 
